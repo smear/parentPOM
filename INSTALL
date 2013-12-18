@@ -1,0 +1,10 @@
+You can copy smartSmear source code by commands
+git clone https://github.com/smear/parentPOM.git
+git clone https://github.com/smear/map-portlet.git
+git clone https://github.com/smear/smart.git
+
+When you install liferay plaese use the latest version, NOT
+6.2.0-RC5 which was latest version of the 
+liferay-maven-plugins-sdk when uploading this pom. They can differ.
+ 
+And we also recommended latest version of the vaadin. 
