@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven
+.apache.org/xsd/maven-4.0.0.xsd">
+   <modelVersion>4.0.0</modelVersion>
+
+   <groupId>fi.csc.avaa.plugins</groupId>
+        <artifactId>liferay-maven-plugins-sdk</artifactId>
+   <version>1.0</version>
+   <packaging>pom</packaging>
+   <name>liferay-maven-plugins-sdk</name>
+
+   <properties>
+      <liferay.auto.deploy.dir>/opt/avaa/liferay-portal/deploy</liferay.auto.deploy.dir>
+      <liferay.version>6.2.0-RC5</liferay.version>
+      <!--Direct deploy MOJO seems to be copying META-INF and WEB-INF with xmls to liferay.app.server.deploy.dir so must point to ROOT-->
+      <liferay.app.server.deploy.dir>/opt/avaa/liferay-portal/tomcat/webapps/ROOT</liferay.app.server.deploy.dir>
+                <liferay.app.server.lib.global.dir>/opt/avaa/liferay-portal/tomcat/lib/ext</liferay.app.server.lib.global.dir>
+                <liferay.app.server.portal.dir>/opt/avaa/liferay-portal/tomcat/webapps/ROOT</liferay.app.server.portal.dir>
+      <liferay.app.server.classes.portal.dir>${liferay.app.server.portal.dir}/WEB-INF/classes</liferay.app.server.classes.portal.dir>
+      <vaadin.version>7.1.7</vaadin.version>
+      <vaadin.plugin.version>${vaadin.version}</vaadin.plugin.version>
+      <skipTests>true</skipTests>
+   </properties>
+
+   <dependencies>
+   </dependencies>
+
+   <modules>
+      <module>avaa-core</module>
+      <!--module>template-portlet</module-->
+      <module>map-portlet</module>
+      <module>smart-smear-portlet</module>
+   </modules>
+</project>
